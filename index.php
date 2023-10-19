@@ -157,7 +157,7 @@
           <div class="col-md-6 col-lg-5" data-aos="zoom-in" data-aos-delay="200">
             <div class="box">
               <div class="icon"><i class="bi bi-card-checklist" style="color: #e9bf06;"></i></div>
-              <h4 class="title"><a href="">Intermediário (Intermediate)</a></h4>
+              <h4 class="title"><a href="">Intermediário </a></h4>
               <p class="description">
                 Para aqueles que já possuem uma compreensão básica do inglês, o nível intermediário expande as habilidades linguísticas, permitindo que os alunos participem de conversas mais complexas. Aprofundaremos o vocabulário.
               </p>
@@ -167,7 +167,7 @@
           <div class="col-md-6 col-lg-5" data-aos="zoom-in" data-aos-delay="100">
             <div class="box">
               <div class="icon"><i class="bi bi-bar-chart" style="color: #3fcdc7;"></i></div>
-              <h4 class="title"><a href="">Avançado (Advanced)</a></h4>
+              <h4 class="title"><a href="">Avançado</a></h4>
               <p class="description">
                 No nível avançado, os alunos aprimoram suas habilidades em inglês para um nível quase nativo. Concentramo-nos em tópicos mais sofisticados, discutindo questões sociais, culturais.
                 </p>
@@ -262,9 +262,7 @@
         </div>
 
       </div>
-    </section><!-- End Why Us Section -->
-
-    <!-- ======= Portfolio Section ======= -->
+    </section>
     <section id="portfolio" class="clearfix">
       <div class="container" data-aos="fade-up">
 
