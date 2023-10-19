@@ -36,7 +36,7 @@
 
       <div class="logo">
        
-        <a href="index.html"><img src="assets/img/logo1.png" alt="" class="img-fluid"></a>
+        <a href="index.php"><img  src="assets/img/logo1.png"   alt="PresSchool" class="img-fluid"></a>
       </div>
 
       <nav id="navbar" class="navbar">
@@ -82,14 +82,14 @@
 
         <header class="section-header">
           <h3>Sobre Nós</h3>
-          <p>Bem-vindo à Pres School, a academia de inglês que vai revolucionar a forma como você aprende o idioma! Nosso programa moderno e interativo foi projetado pensando em você, para proporcionar uma experiência de aprendizado única e eficaz</p>
+          <p>Bem-vindo à Pres School,  a academia de inglês que vai revolucionar a forma como você aprende o idioma! Nosso programa moderno e interativo foi projetado pensando em você, para proporcionar uma experiência de aprendizado única e eficaz</p>
         </header>
 
         <div class="row about-container">
 
           <div class="col-lg-6 content order-lg-1 order-2">
             <p>
-              Na Pres School, acreditamos que aprender inglês deve ser divertido e inspirador. Nossos cursos são ministrados por professores altamente qualificados, apaixonados por ensinar, que o acompanharão em cada passo do caminho. Com aulas dinâmicas e materiais didáticos envolventes, você se sentirá motivado(a) a progredir constantemente.
+              Na Pres School, teste acreditamos que aprender inglês deve ser divertido e inspirador. Nossos cursos são ministrados por professores altamente qualificados, apaixonados por ensinar, que o acompanharão em cada passo do caminho. Com aulas dinâmicas e materiais didáticos envolventes, você se sentirá motivado(a) a progredir constantemente.
             </p>
 
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
