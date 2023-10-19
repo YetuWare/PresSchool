@@ -36,7 +36,7 @@
 
       <div class="logo">
        
-        <a href="index.php"><img  src="assets/img/logo1.png"   alt="PresSchool" class="img-fluid"></a>
+        <a href="index.php"><img  src="assets/img/logo1.png" style="width: 70pt; height: 200px !important;"   alt="PresSchool" class="img-fluid"></a>
       </div>
 
       <nav id="navbar" class="navbar">
@@ -45,7 +45,7 @@
           <li><a class="nav-link scrollto" href="#about">Sobre Nós</a></li>
           <li><a class="nav-link scrollto" href="#services">Níveis de aprendizado</a></li>
           <li><a class="nav-link scrollto " href="#portfolio">Galeria</a></li>
-          <li><a class="nav-link scrollto" href="#team">Equipa</a></li>
+        
       
           <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
         </ul>

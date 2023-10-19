@@ -109,7 +109,8 @@ h6 {
 
 #header .logo img {
   padding: 0;
-  max-height: 40px;
+  max-height: 90px;
+  margin-left: 50px;
 }
 
 /*--------------------------------------------------------------
