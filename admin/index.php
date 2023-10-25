@@ -2,7 +2,7 @@
     
     session_start();
 
-    include '../conexao.php';
+    //include '../conexao.php';
     if(isset($_POST['btnentrar'])){
     $email_telefone = $_POST['email_telefone'];
     $senha = $_POST['senha'];
