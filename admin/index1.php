@@ -4,7 +4,7 @@
 //    ini_set(“display_errors”, 0);
     session_start();
     include '../conexao.php';
-    $nomee = $_SESSION['nome_admin'];
+    $nomee = $_SESSION['nome'];
     /*if((!isset ($_SESSION['nome_admin']) == true) and (!isset ($_SESSION['senha'] )== true)){
 
         unset($_SESSION['nome_admin']);
