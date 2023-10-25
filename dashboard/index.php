@@ -7,7 +7,7 @@
     $email_telefone = $_POST['email_telefone'];
     $senha = $_POST['senha'];
 
-    $verifica = mysqli_query($connection,"select * from admin WHERE email_telefone = '$email_telefone' AND  senha = '$senha'");
+    $verifica = mysqli_query($conexao,"select * from admin WHERE email = '$email_telefone' AND  senha = '$senha'");
 
     if(mysqli_num_rows($verifica)<=0){
 
@@ -20,8 +20,8 @@
             $id_usuario = $linha2['id_admin'];
             $senha_admin = $linha2['senha'];
         }
-        $_SESSION['nome_admin'] = $nome_usuario;
-        $_SESSION['id_admin'] = $id_usuario;
+        $_SESSION['nome'] = $nome_usuario;
+        $_SESSION['id'] = $id_usuario;
         $_SESSION['senha'] = $senha;
         header('location:index1.php');
         
