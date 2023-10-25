@@ -90,12 +90,6 @@
                                 
                                 <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit" name="btnentrar">Login</button>
                             </form>
-                            <div class="register-link">
-                                <p>
-                                    Don't you have account?
-                                    <a href="#">Sign Up Here</a>
-                                </p>
-                            </div>
                         </div>
                     </div>
                 </div>
