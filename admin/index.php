@@ -16,8 +16,8 @@
         }
     else{
         while($linha2 = mysqli_fetch_assoc($verifica)){
-            $nome_usuario = $linha2['nome_admin'];
-            $id_usuario = $linha2['id_admin'];
+            $nome_usuario = $linha2['nome'];
+            $id_usuario = $linha2['id'];
             $senha_admin = $linha2['senha'];
         }
         $_SESSION['nome'] = $nome_usuario;
