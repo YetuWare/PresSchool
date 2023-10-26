@@ -41,13 +41,13 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Pagina Principal</a></li>
+          <li><a class="nav-link scrollto active" href="#hero">Ínicio</a></li>
           <li><a class="nav-link scrollto" href="#about">Sobre Nós</a></li>
           <li><a class="nav-link scrollto" href="#services">Níveis de aprendizado</a></li>
           <li><a class="nav-link scrollto " href="#portfolio">Galeria</a></li>
         
       
-          <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contactos</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -288,7 +288,6 @@
               <img src="assets/img/space.jpeg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4><a>Sala de Formação</a></h4>
-                <p><strong>nossos espaços</strong></p>
                 <div>
                   <a href="assets/img/space.jpeg" data-gallery="portfolioGallery" title="Sala de Formação" class="portfolio-lightbox link-preview"><i class="bi bi-plus"></i></a>
                 </div>
