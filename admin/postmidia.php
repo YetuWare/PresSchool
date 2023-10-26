@@ -17,7 +17,7 @@
              $file2 = $file["name"];
              $query = "insert into galeria (titulo,ficheiro) values ('$titulo','$file2','$id_admin')";
              if(mysqli_query($connection, $query)){
-                 echo "<script>alert('Produto adicionado com sucesso!');</script>";
+                 echo "<script>alert('Mídia adicionada com sucesso!');</script>";
              }
              else{
                  echo "<script>alert('Erro ao adicionar mídia!');</script>";
