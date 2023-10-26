@@ -118,7 +118,7 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="addproduto.php"
+                <a class="nav-link collapsed" href="postmidia.php"
                     aria-expanded="true" aria-controls="collapsePages">
                     <span>Adicionar Fotos/Vídeos</span>
                 </a>
