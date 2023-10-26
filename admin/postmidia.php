@@ -4,29 +4,23 @@
     include '../conexao.php';
     // ADICIONAR PRODUTO E FAZER UPLOAD DE IMAGEM
     if($_SERVER['REQUEST_METHOD'] === "POST"){
-        $id_admin = $_SESSION['id_admin'];
-        $nome_produto = $_POST['nome_produto'];
-        $quantidade = $_POST['quantidade_produto'];
-        $destaque = $_POST['destaque'];
-        $preco = $_POST['preco_produto'];
-        $cor = $_POST['cor_produto'];
-        $categoria = $_POST['categoria_produto'];
+        $id_admin = $_SESSION['id'];
+        $titulo = $_POST['titulo'];
         $file = $_FILES['imagem'];
 
-        if(($nome_produto =="") || ($quantidade =="") || ($cor =="") || ($categoria == "" ) || ($preco == "")){
+        if($titulo == ""){
 
             echo "<script>alert('Preencha todos os campos');</script>";
          
          }
          else{
              $file2 = $file["name"];
-             $query = "insert into produtos (nome_produto,preco,quantidade,cor,categoria,imagem,destaque,admin_id_admin) values ('$nome_produto','$preco','$quantidade','$cor','$categoria','$file2','$destaque','$id_admin')";
+             $query = "insert into galeria (titulo,ficheiro) values ('$titulo','$file2','$id_admin')";
              if(mysqli_query($connection, $query)){
                  echo "<script>alert('Produto adicionado com sucesso!');</script>";
-                 
              }
              else{
-                 echo "<script>alert('Erro ao adicionar produto!');</script>";
+                 echo "<script>alert('Erro ao adicionar mídia!');</script>";
              }
          
          }
@@ -72,7 +66,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Loja - Admin</title>
+    <title>PRES SCHOOL - Admin</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -129,14 +123,14 @@
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Produtos
+                Galeria
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="addproduto.php"
                     aria-expanded="true" aria-controls="collapsePages">
-                    <span>Adicionar Produtos</span>
+                    <span>Adicionar Fotos/Vídeos</span>
                 </a>
                
             </li>
@@ -345,41 +339,14 @@
                         <h3>Adicionar Produto</h3>
                         <form method="POST" enctype="multipart/form-data">
                             <div>
-                                <label>Nome do produto</label>
+                                <label>Título</label>
                                 <input type="text" name="nome_produto" class="form-control" placeholder="Nome do produto">
                             </div>
                             <div>
-                                <label>Quantidade</label>
-                                <input type="number" name="quantidade_produto" class="form-control" placeholder="Quantidade">
+                                <label>Foto/Vídeo</label>
+                                <input class="form-control" type="file" name="imagem" placeholder="selecione um arquivo">
                             </div>
-                            <div>
-                                <label>Preço</label>
-                                <input type="number" name="preco_produto" class="form-control" placeholder="Preço">
-                            </div>
-                            <div>
-                                <label>Cor</label>
-                                <input type="text" name="cor_produto" class="form-control" placeholder="Cor do produto">
-                            </div>
-                            <div>
-                                <label>Imagem do produto</label>
-                                <input class="form-control" type="file" name="imagem" placeholder="selecione uma imagemm do produto">
-                            </div>
-                            <div>
-                                <label>Categoria</label>
-                                <select name="categoria_produto" class="form-control">
-                                    <option>Opção 1</option>
-                                    <option>Opção 2</option>
-                                    <option>Opção 3</option>
-                                </select>    
-                            </div><br><br>
-                            <div>
-                                <label>Adicionar aos destaques</label>
-                                <select name="destaque" class="form-control">
-                                    <option>Não</option>
-                                    <option>Sim</option>
-                                </select>    
-                            </div><br><br>
-                            <button class="btn btn-primary">Adicionar Produto</button>
+                            <button class="btn btn-primary">Publicar</button>
                         </form>
                         
 

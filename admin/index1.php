@@ -120,7 +120,7 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="addproduto.php"
                     aria-expanded="true" aria-controls="collapsePages">
-                    <span>Adicionar Imagens</span>
+                    <span>Adicionar Fotos/Vídeos</span>
                 </a>
                
             </li>
