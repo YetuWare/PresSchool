@@ -1,4 +1,4 @@
-const text = "Desbloqueie seu potencial em inglês online!";
+const text = "Desbloqueie seu potencial em inglês!";
   const delay = 100; 
 
   function typeWriterEffect(element, text, delay) {
