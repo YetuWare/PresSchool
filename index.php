@@ -147,8 +147,7 @@
 
           <div class="col-md-6 col-lg-5" data-aos="zoom-in" data-aos-delay="100">
             <div class="box">
-              <div class="icon"><i class="bi bi-bar-chart" style="color: #ff689b;"></i></div>
-              <h4 class="title"><a href="">Beginner</a></h4>
+              <h4 class="title"><a href="">A1</a></h4>
               <p class="description">
                 Nesse nível, introduzimos os fundamentos essenciais do inglês. Os alunos aprenderão a estrutura básica das frases, o vocabulário cotidiano e as habilidades fundamentais de audição.
                 </p>
@@ -156,8 +155,7 @@
           </div>
           <div class="col-md-6 col-lg-5" data-aos="zoom-in" data-aos-delay="200">
             <div class="box">
-              <div class="icon"><i class="bi bi-card-checklist" style="color: #e9bf06;"></i></div>
-              <h4 class="title"><a href="">Intermediário </a></h4>
+              <h4 class="title"><a href="">A2 </a></h4>
               <p class="description">
                 Para aqueles que já possuem uma compreensão básica do inglês, o nível intermediário expande as habilidades linguísticas, permitindo que os alunos participem de conversas mais complexas. Aprofundaremos o vocabulário.
               </p>
@@ -166,8 +164,7 @@
 
           <div class="col-md-6 col-lg-5" data-aos="zoom-in" data-aos-delay="100">
             <div class="box">
-              <div class="icon"><i class="bi bi-bar-chart" style="color: #3fcdc7;"></i></div>
-              <h4 class="title"><a href="">Avançado</a></h4>
+              <h4 class="title"><a href="">B2</a></h4>
               <p class="description">
                 No nível avançado, os alunos aprimoram suas habilidades em inglês para um nível quase nativo. Concentramo-nos em tópicos mais sofisticados, discutindo questões sociais, culturais.
                 </p>
@@ -175,8 +172,7 @@
           </div>
           <div class="col-md-6 col-lg-5" data-aos="zoom-in" data-aos-delay="200">
             <div class="box">
-              <div class="icon"><i class="bi bi-envelope" style="color:#41cf2e;"></i></div>
-              <h4 class="title"><a href="">Proficiência (Proficiency)</a></h4>
+              <h4 class="title"><a href="">C1</a></h4>
               <p class="description">
                 Para aqueles que desejam alcançar a fluência completa, oferecemos um nível de proficiência que permitirá aos alunos se comunicarem com total confiança e precisão.
               </p>
@@ -275,8 +271,8 @@
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">Todas</li>
               <li data-filter=".filter-app">Nossos Espaços</li>
-              <li data-filter=".filter-card">Alunos</li>
-              <li data-filter=".filter-web">Atividades Extras</li>
+              <li data-filter=".filter-card">Parceiros</li>
+              <li data-filter=".filter-web">Formandos</li>
             </ul>
           </div>
         </div>
@@ -290,6 +286,30 @@
                 <h4><a>Sala de Formação</a></h4>
                 <div>
                   <a href="assets/img/space.jpeg" data-gallery="portfolioGallery" title="Sala de Formação" class="portfolio-lightbox link-preview"><i class="bi bi-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/pres (4).jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Formandos</a></h4>
+                <div>
+                  <a href="assets/img/pres (4).jpg" data-gallery="portfolioGallery" title="Momentos com os formandos" class="portfolio-lightbox link-preview"><i class="bi bi-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!--filter card----->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/pres (5).jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Parceiros</a></h4>
+                <div>
+                  <a href="assets/img/pres (5).jpeg" data-gallery="portfolioGallery" title="Nossos Parceiros" class="portfolio-lightbox link-preview"><i class="bi bi-plus"></i></a>
                 </div>
               </div>
             </div>
@@ -317,15 +337,16 @@
 
                 <div class="swiper-slide">
                   <div class="testimonial-item">
-                    <img src="assets/img/testimonial-1.jpg" class="testimonial-img" alt="">
                     <h3>Lukeny da Cunha</h3>
-                    <h4>Estudante &amp; Monitor</h4>
+                    <h4>Formando</h4>
                     <p>
                       A escola oferece um ambiente acolhedor e amigável, o que torna o processo de aprendizagem muito agradável. Os materiais didáticos são modernos e envolventes, e as aulas são sempre bem estruturadas. 
                     </p>
                   </div>
-                </div><!-- End testimonial item -->
-
+                </div>
+                
+                <!-- End testimonial item -->
+               
                 
               </div>
               <div class="swiper-pagination"></div>
