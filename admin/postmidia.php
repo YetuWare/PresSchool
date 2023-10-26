@@ -128,7 +128,7 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="addproduto.php"
+                <a class="nav-link collapsed" href="postmidia.php"
                     aria-expanded="true" aria-controls="collapsePages">
                     <span>Adicionar Fotos/Vídeos</span>
                 </a>
@@ -336,7 +336,7 @@
                         
                     </div>
                     <div>
-                        <h3>Adicionar Produto</h3>
+                        <h3>Publicar Fotos/Vídeos</h3>
                         <form method="POST" enctype="multipart/form-data">
                             <div>
                                 <label>Título</label>
