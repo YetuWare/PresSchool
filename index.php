@@ -64,7 +64,7 @@
       </div>
 
       <div class="hero-info" data-aos="zoom-in" data-aos-delay="100">
-        <h2 id="typewriter" ></h2>
+        <h2 id="typewriter"></h2>
         <div>
           <a href="#about" class="btn-get-started scrollto">Se inscrever Agora</a>
           <a href="#services" class="btn-services scrollto">Nossos Serviços</a>
@@ -89,7 +89,7 @@
 
           <div class="col-lg-6 content order-lg-1 order-2">
             <p>
-              Na Pres School, teste acreditamos que aprender inglês deve ser divertido e inspirador. Nossos cursos são ministrados por professores altamente qualificados, apaixonados por ensinar, que o acompanharão em cada passo do caminho. Com aulas dinâmicas e materiais didáticos envolventes, você se sentirá motivado(a) a progredir constantemente.
+              Na Pres School, acreditamos que aprender inglês deve ser divertido e inspirador. Nossos cursos são ministrados por professores altamente qualificados, apaixonados por ensinar, que o acompanharão em cada passo do caminho. Com aulas dinâmicas e materiais didáticos envolventes, você se sentirá motivado(a) a progredir constantemente.
             </p>
 
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
@@ -431,50 +431,7 @@
                   </div>
                 </div><!-- End testimonial item -->
 
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <img src="assets/img/testimonial-2.jpg" class="testimonial-img" alt="">
-                    <h3>Sara De Oliveira</h3>
-                    <h4>Formanda</h4>
-                    <p>
-                      Estou muito satisfeita com minha formação na Pres Schooll e recomendo a todos que desejam aprender inglês de forma sólida e divertida!
-                    </p>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <img src="assets/img/testimonial-3.jpg" class="testimonial-img" alt="">
-                    <h3>Daniela Armando</h3>
-                    <h4>Intercambista</h4>
-                    <p>
-                      Não poderia ter escolhido uma academia melhor para aprender inglês do que a Pres Schooll. A atmosfera acolhedora e a equipe de professores altamente qualificados fizeram toda a diferença em minha jornada de aprendizado. 
-                    </p>
-                  </div>
-                </div><!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <img src="assets/img/testimonial-4.jpg" class="testimonial-img" alt="">
-                    <h3>Meteus Fernando</h3>
-                    <h4>Estudante</h4>
-                    <p>
-                      A Pres Schooll realmente se importa com o progresso dos alunos, e estou muito feliz com minha evolução no idioma graças a essa formação. Superou todas as minhas expectativas.
-                    </p>
-                  </div>
-                </div><!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <img src="assets/img/testimonial-5.jpg" class="testimonial-img" alt="">
-                    <h3>Adão Magalhães</h3>
-                    <h4>Desenvolvedor</h4>
-                    <p>
-                      Eu escolhi a Pres Schooll para aprimorar meu inglês, e a decisão foi mais do que acertada! A escola oferece um ambiente acolhedor e amigável, o que torna o processo de aprendizagem muito agradável
-                    </p>
-                  </div>
-                </div><!-- End testimonial item -->
-
+                
               </div>
               <div class="swiper-pagination"></div>
             </div>
