@@ -2,8 +2,6 @@
 
     session_start();
     include '../conexao.php';
-    
-    echo "AB";
     // ADICIONAR PRODUTO E FAZER UPLOAD DE IMAGEM
     if($_SERVER['REQUEST_METHOD'] === "POST"){
         $id_admin = $_SESSION['id'];
@@ -17,7 +15,7 @@
          }
          else{
              $file2 = $file["name"];
-             $query = "insert into imagem (titulo,imagem,idamin) values ('$titulo','$file2','$id_admin')";
+             $query = "insert into imagem (titulo,imagem,idamin) values ('$titulo','$file2','1')";
              if(mysqli_query($conexao, $query)){
                  echo "<script>alert('Mídia adicionada com sucesso!');</script>";
              }
