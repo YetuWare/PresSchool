@@ -2,10 +2,11 @@
 
     session_start();
     include '../conexao.php';
+    
+    echo $id_admin;
     // ADICIONAR PRODUTO E FAZER UPLOAD DE IMAGEM
     if($_SERVER['REQUEST_METHOD'] === "POST"){
         $id_admin = $_SESSION['id'];
-        echo $id_admin;
         $titulo = $_POST['titulo'];
         $file = $_FILES['imagem'];
 
