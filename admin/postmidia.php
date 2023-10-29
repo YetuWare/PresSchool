@@ -3,7 +3,7 @@
     session_start();
     include '../conexao.php';
     
-    echo $id_admin;
+    echo "AB";
     // ADICIONAR PRODUTO E FAZER UPLOAD DE IMAGEM
     if($_SERVER['REQUEST_METHOD'] === "POST"){
         $id_admin = $_SESSION['id'];
