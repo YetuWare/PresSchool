@@ -16,7 +16,7 @@
          else{
              $file2 = $file["name"];
              $query = "insert into imagem (titulo,imagem,idamin) values ('$titulo','$file2','$id_admin')";
-             if(mysqli_query($connection, $query)){
+             if(mysqli_query($conexao, $query)){
                  echo "<script>alert('Mídia adicionada com sucesso!');</script>";
              }
              else{
