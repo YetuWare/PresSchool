@@ -340,7 +340,7 @@
                         <form method="POST" enctype="multipart/form-data">
                             <div>
                                 <label>Título</label>
-                                <input type="text" name="nome_produto" class="form-control" placeholder="Título">
+                                <input type="text" name="titulo" class="form-control" placeholder="Título">
                             </div>
                             <div>
                                 <label>Foto/Vídeo</label>
