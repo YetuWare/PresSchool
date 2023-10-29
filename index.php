@@ -290,30 +290,6 @@
               </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/pres (4).jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a>Formandos</a></h4>
-                <div>
-                  <a href="assets/img/pres (4).jpg" data-gallery="portfolioGallery" title="Momentos com os formandos" class="portfolio-lightbox link-preview"><i class="bi bi-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        <!--filter card----->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/pres (5).jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a>Parceiros</a></h4>
-                <div>
-                  <a href="assets/img/pres (5).jpeg" data-gallery="portfolioGallery" title="Nossos Parceiros" class="portfolio-lightbox link-preview"><i class="bi bi-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
           
 
         </div>
