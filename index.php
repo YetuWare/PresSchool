@@ -1,3 +1,34 @@
+<?php
+
+include 'conexao.php';
+$query1 = "select * from imagem";
+$dados2 = mysqli_query($conexao,$query1);
+if($dados2){
+         $total2 = mysqli_num_rows($dados2);
+         if($total2 > 0){          
+             while($linha2 = mysqli_fetch_assoc($dados2)){
+             //$id1 =  $linha2['id'];
+             $titulo = $linha2["titulo"];
+             $img = $linha2["imagem"];
+             $resultado .="
+             <div class='col-lg-4 col-md-6 portfolio-item filter-app'>
+            <div class='portfolio-wrap'>
+              <img src='admin/uploads/".$img."' class='img-fluid' alt=''>
+              <div class='portfolio-info'>
+                <h4><a>".$titulo."</a></h4>
+                <div>
+                  <a href='admin/uploads/".$img."' data-gallery='portfolioGallery' title='".$titulo."' class='portfolio-lightbox link-preview'><i class='bi bi-plus'></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+             ";
+             }
+         }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-PT">
 
@@ -277,19 +308,7 @@
           </div>
         </div>
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/space.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a>Sala de Formação</a></h4>
-                <div>
-                  <a href="assets/img/space.jpeg" data-gallery="portfolioGallery" title="Sala de Formação" class="portfolio-lightbox link-preview"><i class="bi bi-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <?=$resultado?>
           
 
         </div>
