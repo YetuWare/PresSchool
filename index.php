@@ -79,8 +79,8 @@ $query2 = "select * from contadores";
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>PRES School</title>
-  <meta content="Aprender inglês é na Pres School" name="description">
+  <title>PRES SCHOOL</title>
+  <meta content="Aprender inglês é na PRES SCHOOL" name="description">
   <meta name="author" content="YetuWare">
   <meta content="english,presschool,school" name="keywords">
 
@@ -156,14 +156,14 @@ $query2 = "select * from contadores";
 
         <header class="section-header">
           <h3>Sobre Nós</h3>
-          <p>Bem-vindo à Pres School,  a academia de inglês que vai revolucionar a forma como você aprende o idioma! Nosso programa moderno e interativo foi projetado pensando em você, para proporcionar uma experiência de aprendizado única e eficaz</p>
+          <p>Bem-vindo à PRES SCHOOL,  a academia de inglês que vai revolucionar a forma como você aprende o idioma! Nosso programa moderno e interativo foi projetado pensando em você, para proporcionar uma experiência de aprendizado única e eficaz</p>
         </header>
 
         <div class="row about-container">
 
           <div class="col-lg-6 content order-lg-1 order-2">
             <p>
-              Na Pres School, acreditamos que aprender inglês deve ser divertido e inspirador. Nossos cursos são ministrados por professores altamente qualificados, apaixonados por ensinar, que o acompanharão em cada passo do caminho. Com aulas dinâmicas e materiais didáticos envolventes, você se sentirá motivado(a) a progredir constantemente.
+              Na PRES SCHOOL, acreditamos que aprender inglês deve ser divertido e inspirador. Nossos cursos são ministrados por professores altamente qualificados, apaixonados por ensinar, que o acompanharão em cada passo do caminho. Com aulas dinâmicas e materiais didáticos envolventes, você se sentirá motivado(a) a progredir constantemente.
             </p>
 
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
@@ -196,7 +196,7 @@ $query2 = "select * from contadores";
             <img src="assets/img/about-extra-1.svg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-5 pt-lg-0" data-aos="fade-left">
-            <h4>Na PRESSCHOOL, ajudamos os nossos alunos a serem mais eficientes nos seus desafios.</h4>
+            <h4>Na PRES SCHOOL, ajudamos os nossos alunos a serem mais eficientes nos seus desafios.</h4>
             <p>
               Aqui ajudamos-te a a apresentar vantagens competitivas na procura de novas oportunidades de trabalho.</p>     </p>
           </div>
@@ -264,9 +264,9 @@ $query2 = "select * from contadores";
     <section id="why-us">
       <div class="container" data-aos="fade-up">
         <header class="section-header">
-          <h3>Porquê a Pres School?</h3>
+          <h3>Porquê a PRES SCHOOL?</h3>
           <p style="text-align: center;">
-            Porque a Pres School é a escolha ideal para aprimorar o seu inglês, oferecendo uma experiência de aprendizado interativa, professores qualificados e flexibilidade para se adaptar à sua rotina. Desperte seu potencial linguístico e conquiste fluência com confiança!
+            Porque a  PRES SCHOOL é a escolha ideal para aprimorar o seu inglês, oferecendo uma experiência de aprendizado interativa, professores qualificados e flexibilidade para se adaptar à sua rotina. Desperte seu potencial linguístico e conquiste fluência com confiança!
           </p>
         </header>
 
