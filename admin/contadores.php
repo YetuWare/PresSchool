@@ -44,12 +44,6 @@
     $nalunos = $_POST['nalunos'];
     $ialunos = $_POST['ialunos'];
     $tformadores = $_POST['tformadores'];
-
-    if(($nome_admin =="") || ($email_telefone =="") || ($senha == "" )){
-    echo "<script>alert('Preencha todos os campos');</script>";
-    }
-    else{
-
         $query = "UPDATE contadores SET talunos='$talunos', nalunos='$nalunos', ialunos='$ialunos', tformadores='$tformadores'  WHERE id=1)";
         
         if(mysqli_query($conexao, $query)){
@@ -60,7 +54,6 @@
         }
 
     }
-}
 ?>
 <!DOCTYPE html>
 <html lang="pt-PT">
