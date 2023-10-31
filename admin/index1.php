@@ -232,7 +232,7 @@
                                 <?php
                                  
                                     $query = "select * from admin";
-                                    $dados = mysqli_query($connection,$query);
+                                    $dados = mysqli_query($conexao,$query);
                                     
                                     if($dados){
                                         $total = mysqli_num_rows($dados);
