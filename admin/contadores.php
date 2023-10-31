@@ -1,10 +1,11 @@
 <?php
     session_start();
     include '../conexao.php';
-    if(isset($_POST['btn_cadastraradmin'])){
-    $nome_admin = $_POST['nome_admin'];
-    $email_telefone = $_POST['email_telefone'];
-    $senha = $_POST['senha'];
+    if(isset($_POST['btn_upd'])){
+    $talunos = $_POST['talunos'];
+    $nalunos = $_POST['nalunos'];
+    $ialunos = $_POST['ialunos'];
+    $tformadores = $_POST['tformadores'];
 
     if(($nome_admin =="") || ($email_telefone =="") || ($senha == "" )){
     echo "<script>alert('Preencha todos os campos');</script>";
@@ -223,7 +224,7 @@
                                 <input type="number" name="tformadores" class="form-control" placeholder="Total de Formadores">
                             </div>
                             <br><br>
-                            <button name="btn_cadastraradmin" class="btn btn-primary">Actualizar</button>
+                            <button name="btn_upd" class="btn btn-primary">Actualizar</button>
                         </form>
                     <!-- Content Row -->
             <!-- Footer -->
