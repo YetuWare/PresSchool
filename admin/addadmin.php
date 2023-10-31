@@ -103,6 +103,14 @@
                
             </li>
 
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="contadores.php"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <span>Actualizar Números</span>
+                </a>
+               
+            </li>
+
 
             
 
