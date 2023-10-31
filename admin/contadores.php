@@ -13,7 +13,7 @@
                 $nalunos1 = $linha2["nalunos"];
                 $ialunos1 = $linha2["ialunos"];
                 $tformadores1 = $linha2["tformadores"];
-
+                $resultado = "";
                 $resultado .="
                 <form method='POST'>
                 <div>
