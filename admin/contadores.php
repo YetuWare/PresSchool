@@ -12,25 +12,25 @@
                 $talunos1 = $linha2["talunos"];
                 $nalunos1 = $linha2["nalunos"];
                 $ialunos1 = $linha2["ialunos"];
-                $tformadores = $linha2["tformadores"];
+                $tformadores1 = $linha2["tformadores"];
 
                 $resultado .="
                 <form method='POST'>
                 <div>
                     <label>Total de alunos</label>
-                    <input type='number' value='".$talunos."' name='talunos' class='form-control' placeholder='Total de Alunos'>
+                    <input type='number' value='".$talunos1."' name='talunos' class='form-control' placeholder='Total de Alunos'>
                 </div>
                 <div>
                     <label>Alunos Nacionais</label>
-                    <input type='number' value='".$nalunos."' name='nalunos' class='form-control' placeholder='Alunos Nacionais'>
+                    <input type='number' value='".$nalunos1."' name='nalunos' class='form-control' placeholder='Alunos Nacionais'>
                 </div>
                 <div>
                     <label>Alunos Internacionais</label>
-                    <input type='number' value='".$ialunos."' name='ialunos' class='form-control' placeholder='Alunos Internacionais'>
+                    <input type='number' value='".$ialunos1."' name='ialunos' class='form-control' placeholder='Alunos Internacionais'>
                 </div>
                 <div>
                     <label>Total de Formadores</label>
-                    <input type='number' value='".$tformadores."' name='tformadores' class='form-control' placeholder='Total de Formadores'>
+                    <input type='number' value='".$tformadores1."' name='tformadores' class='form-control' placeholder='Total de Formadores'>
                 </div>
                 <br><br>
                 <button name='btn_upd' class='btn btn-primary'>Actualizar</button>
