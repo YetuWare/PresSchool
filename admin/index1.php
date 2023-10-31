@@ -277,7 +277,7 @@
                                         <td> <label>Morada</label><br><input name='morada' value=".$linha['morada']."></input> </td> 
                                         <td> <label>Senha</label><br><input type='password' name='senha'></td>   
                                         <td> <br><button type='submit' name='editar3'> Actualizar </button> </td>
-                                    </tr>-->     
+                                    -->     
                                     </form>    
                                     
                                     ";
@@ -294,10 +294,10 @@
                     </div>
                     <br><br><br>
                     <div>
-                        <h3>Usuários</h3>
+                        <h3>Fotos/Vídeos</h3>
                         <?php
                                  
-                                    $query = "select * from usuario";
+                                    $query = "select * from galeria";
                                     $dados = mysqli_query($connection,$query);
                                     
                                     if($dados){
@@ -311,33 +311,28 @@
                                             <thead class='thead-light'>    
                                             <tr>
                                                     <th>ID</th>
-                                                    <th> Nome</th>
-                                                    <th>Email / Telefone</th>
-                                                    <th>Morada</th>
-                                                    <th>Senha</th>
+                                                    <th>Título</th>
+                                                    <th>Foto/Vídeo</th>
                                                     <th>Acções</th>
                                                 </tr></thead>";        
                                 while($linha = mysqli_fetch_assoc($dados)){
-                                    $identify3 = $linha['id_usuario'];
+                                    $identify3 = $linha['ido'];
+                                    $imagem = $linha['imagem'];
                                     echo "
                                     <tbody>
                                     <tr>
                                     
-                                    <td>".$linha['id_usuario']."</td>".
-                                    "<td>".$linha['nome_usuario']."</td>".
-                                    "<td>".$linha['email_telefone']."
-                                    </td>".
-                                    "<td>".$linha['morada']."
-                                    </td>".
-                                    "<td>"."********"."</td>"."
+                                    <td>".$linha['id']."</td>".
+                                    "<td>".$linha['titulo']."</td>".
+                                    "<td><img style='height:90px' src='uploads/$imagemm'>"."
                                     <td><form method='POST' action='../remusuario.php?id=".$identify3."'>
                                     
                                 <button name='btneliminar' style='background-color: transparent;border:none;'>
-                                <img style='cursor: pointer;' src='../icons/apagar.png'></button>
+                                apagar
                                 </form>
                                 </td>
                                     </tr>
-                                    <tr id='edit' style=''>
+                                    <!--<tr id='edit' style=''>
                                     <form method='POST'>
                                         <td> <input type='hidden' name='id_usuario' value=".$linha['id_usuario']."></input> </td>    
                                         <td> <label>Nome</label><br><input name='nome_usuario' value=".$linha['nome_usuario']."></input> </td>
@@ -345,7 +340,7 @@
                                         <td> <label>Morada</label><br><input name='morada' value=".$linha['morada']."></input> </td> 
                                         <td> <label>Senha</label><br><input type='password' name='senha'></td>   
                                         <td> <br><button type='submit' name='editar2'> Actualizar </button> </td>      
-                                    </form>
+                                    </form>-->
                                       
                                     
                                     
