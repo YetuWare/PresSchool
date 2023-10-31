@@ -29,7 +29,7 @@ if($dados2){
 }
 
 $query2 = "select * from contadores";
-    $dados3 = mysqli_query($conexao,$query1);
+    $dados3 = mysqli_query($conexao,$query2);
     if($dados3){
             $total3 = mysqli_num_rows($dados3);
             if($total3 > 0){          
