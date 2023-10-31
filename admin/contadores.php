@@ -1,6 +1,44 @@
 <?php
     session_start();
     include '../conexao.php';
+    $query1 = "select * from contadores";
+    $dados2 = mysqli_query($conexao,$query1);
+    if($dados2){
+            $total2 = mysqli_num_rows($dados2);
+            if($total2 > 0){          
+                while($linha2 = mysqli_fetch_assoc($dados2)){
+                //$id1 =  $linha2['id'];
+
+                $talunos1 = $linha2["talunos"];
+                $nalunos1 = $linha2["nalunos"];
+                $ialunos1 = $linha2["ialunos"];
+                $tformadores = $linha2["tformadores"];
+
+                $resultado .="
+                <form method='POST'>
+                <div>
+                    <label>Total de alunos</label>
+                    <input type='number' value='".$talunos."' name='talunos' class='form-control' placeholder='Total de Alunos'>
+                </div>
+                <div>
+                    <label>Alunos Nacionais</label>
+                    <input type='number' value='".$nalunos."' name='nalunos' class='form-control' placeholder='Alunos Nacionais'>
+                </div>
+                <div>
+                    <label>Alunos Internacionais</label>
+                    <input type='number' value='".$ialunos."' name='ialunos' class='form-control' placeholder='Alunos Internacionais'>
+                </div>
+                <div>
+                    <label>Total de Formadores</label>
+                    <input type='number' value='".$tformadores."' name='tformadores' class='form-control' placeholder='Total de Formadores'>
+                </div>
+                <br><br>
+                <button name='btn_upd' class='btn btn-primary'>Actualizar</button>
+            </form>
+                ";
+                }
+            }
+    }
     if(isset($_POST['btn_upd'])){
     $talunos = $_POST['talunos'];
     $nalunos = $_POST['nalunos'];
@@ -12,10 +50,10 @@
     }
     else{
 
-        $query = "insert into admin (nome,email,senha) values ('$nome_admin','$email_telefone','$senha')";
+        $query = "UPDATE contadores SET talunos='$talunos', nalunos='$nalunos', ialunos='$ialunos', tformadores='$tformadores'  WHERE id=1)";
         
         if(mysqli_query($conexao, $query)){
-            echo "<script>alert('Administrador adicionado com sucesso');</script>";
+            echo "<script>alert('Contadores actualizados com sucesso');</script>";
         }
         else{
             echo "<script>alert('Erro ao cadastrar');</script>";
@@ -177,7 +215,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Dorivaldo</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
                                 <img class="img-profile rounded-circle"
                                     src="img/undraw_profile.svg">
                             </a>
@@ -206,26 +244,8 @@
                     </div>
                     <div>
                         <h3>Actualizar contadores</h3>
-                        <form method="POST">
-                            <div>
-                                <label>Total de alunos</label>
-                                <input type="number" name="talunos" class="form-control" placeholder="Total de Alunos">
-                            </div>
-                            <div>
-                                <label>Alunos Nacionais</label>
-                                <input type="number" name="nalunos" class="form-control" placeholder="Alunos Nacionais">
-                            </div>
-                            <div>
-                                <label>Alunos Internacionais</label>
-                                <input type="number" name="ialunos" class="form-control" placeholder="Alunos Internacionais">
-                            </div>
-                            <div>
-                                <label>Total de Formadores</label>
-                                <input type="number" name="tformadores" class="form-control" placeholder="Total de Formadores">
-                            </div>
-                            <br><br>
-                            <button name="btn_upd" class="btn btn-primary">Actualizar</button>
-                        </form>
+                        <?=$resultado?>
+                    </div>
                     <!-- Content Row -->
             <!-- Footer -->
             <footer class="sticky-footer bg-white">
