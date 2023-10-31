@@ -297,7 +297,7 @@
                         <h3>Fotos/Vídeos</h3>
                         <?php
                                  
-                                    $query = "select * from galeria";
+                                    $query = "select * from imagem";
                                     $dados = mysqli_query($conexao,$query);
                                     
                                     if($dados){
@@ -316,7 +316,7 @@
                                                     <th>Acções</th>
                                                 </tr></thead>";        
                                 while($linha = mysqli_fetch_assoc($dados)){
-                                    $identify3 = $linha['ido'];
+                                    $identify3 = $linha['id'];
                                     $imagem = $linha['imagem'];
                                     echo "
                                     <tbody>
@@ -324,7 +324,7 @@
                                     
                                     <td>".$linha['id']."</td>".
                                     "<td>".$linha['titulo']."</td>".
-                                    "<td><img style='height:90px' src='uploads/$imagemm'>"."
+                                    "<td><img style='height:90px' src='uploads/$imagem'>"."
                                     <td><form method='POST' action='../remusuario.php?id=".$identify3."'>
                                     
                                 <button name='btneliminar' style='background-color: transparent;border:none;'>
