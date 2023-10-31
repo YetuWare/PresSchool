@@ -10,6 +10,7 @@ if($dados2){
              //$id1 =  $linha2['id'];
              $titulo = $linha2["titulo"];
              $img = $linha2["imagem"];
+             $resultado = "";
              $resultado .="
              <div class='col-lg-4 col-md-6 portfolio-item filter-app'>
             <div class='portfolio-wrap'>
@@ -26,6 +27,48 @@ if($dados2){
              }
          }
 }
+
+$query2 = "select * from contadores";
+    $dados3 = mysqli_query($conexao,$query1);
+    if($dados3){
+            $total3 = mysqli_num_rows($dados3);
+            if($total3 > 0){          
+                while($linha3 = mysqli_fetch_assoc($dados3)){
+                //$id1 =  $linha2['id'];
+
+                $talunos1 = $linha3["talunos"];
+                $nalunos1 = $linha3["nalunos"];
+                $ialunos1 = $linha3["ialunos"];
+                $tformadores1 = $linha3["tformadores"];
+                $resultado1 = "";
+                $resultado1 .="
+                <div class='row counters' data-aos='fade-up' data-aos-delay='100'>
+
+          <div class='col-lg-3 col-6 text-center'>
+            <span data-purecounter-start='0' data-purecounter-end='".$talunos1."' data-purecounter-duration='1' class='purecounter'></span>
+            <p>Total de Alunos</p>
+          </div>
+
+          <div class='col-lg-3 col-6 text-center'>
+            <span data-purecounter-start='0' data-purecounter-end='".$nalunos1."' data-purecounter-duration='1' class='purecounter'></span>
+            <p>Alunos Nacionais</p>
+          </div>
+
+          <div class='col-lg-3 col-6 text-center'>
+            <span data-purecounter-start='0' data-purecounter-end='".$ialunos1."' data-purecounter-duration='1' class='purecounter'></span>
+            <p>Alunos Internacionais</p>
+          </div>
+
+          <div class='col-lg-3 col-6 text-center'>
+            <span data-purecounter-start='0' data-purecounter-end='".$tformadores1."' data-purecounter-duration='1' class='purecounter'></span>
+            <p>Total de Formadores</p>
+          </div>
+
+        </div>
+                ";
+                }
+              }
+            }
 
 ?>
 
