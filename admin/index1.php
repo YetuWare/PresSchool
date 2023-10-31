@@ -247,7 +247,6 @@
                                                     <th>ID</th>
                                                     <th> Nome</th>
                                                     <th>Email / Telefone</th>
-                                                    <th>Morada</th>
                                                     <th>Senha</th>
                                                     <th>Acções</th>
                                                 </tr></thead>";        
