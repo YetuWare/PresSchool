@@ -252,34 +252,33 @@
                                                     <th>Acções</th>
                                                 </tr></thead>";        
                                 while($linha = mysqli_fetch_assoc($dados)){
-                                    $identify2 = $linha['id_admin'];
+                                    $identify2 = $linha['id'];
                                     echo "
                                     <tbody>
                                     <tr>
                                     
-                                    <td>".$linha['id_admin']."</td>".
-                                    "<td>".$linha['nome_admin']."</td>".
-                                    "<td>".$linha['email_telefone']."
-                                    </td>".
-                                    "<td>".$linha['morada']."
+                                    <td>".$linha['id']."</td>".
+                                    "<td>".$linha['nome']."</td>".
+                                    "<td>".$linha['email']."
                                     </td>".
                                     "<td>"."*******"."</td>"."
                                     
                                     <td><form method='POST' action='../remadmin.php?id=".$identify2."'>
                                     
                                 <button name='btneliminar' style='background-color: transparent;border:none;'>
-                                <img style='cursor: pointer;' src='../icons/apagar.png'></button>
+                                apagar
                                 </form>
                                 </td>
                                 </tr>
-                                    <tr id='edit' style=''>
+                                    <!--<tr id='edit' style=''>
                                     <form method='POST'>
                                         <td> <input type='hidden' name='id_admin' value=".$linha['id_admin']."></input> </td>    
                                         <td> <label>Nome</label><br><input name='nome_admin' value=".$linha['nome_admin']."></input> </td>
                                         <td> <label>Email / Telefone</label><br><input type='text' name='email_telefone' value=".$linha['email_telefone']."></input> </td>
                                         <td> <label>Morada</label><br><input name='morada' value=".$linha['morada']."></input> </td> 
                                         <td> <label>Senha</label><br><input type='password' name='senha'></td>   
-                                        <td> <br><button type='submit' name='editar3'> Actualizar </button> </td>      
+                                        <td> <br><button type='submit' name='editar3'> Actualizar </button> </td>
+                                    </tr>-->     
                                     </form>    
                                     
                                     ";
