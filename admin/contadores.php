@@ -44,7 +44,7 @@
     $nalunos = $_POST['nalunos'];
     $ialunos = $_POST['ialunos'];
     $tformadores = $_POST['tformadores'];
-        $query = "UPDATE contadores SET talunos=$talunos, nalunos=$nalunos, ialunos=$ialunos, tformadores=$tformadores  WHERE id=1)";
+        $query = "UPDATE contadores SET talunos=$talunos, nalunos=$nalunos, ialunos=$ialunos, tformadores=$tformadores  WHERE id=1";
         
         if(mysqli_query($conexao, $query)){
             echo "<script>alert('Contadores actualizados com sucesso');</script>";
