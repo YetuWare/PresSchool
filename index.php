@@ -558,27 +558,28 @@ $query2 = "select * from contadores";
             </div>
 
             <div class="form">
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <form method="post" role="form" class="php-email-form">
                 <div class="row">
                   <div class="form-group col-lg-6">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome" required>
+                    <input type="text" name="nomeM" class="form-control" id="name" placeholder="Seu Nome" required>
                   </div>
                   <div class="form-group col-lg-6 mt-3 mt-lg-0">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Seu email" required>
+                    <input type="email" class="form-control" name="emailM" id="email" placeholder="Seu email" required>
+                  </div>
+                  <div class="form-group col-lg-6 mt-3 mt-lg-0">
+                    <input type="email" class="form-control" name="telefoneM" id="telefone" placeholder="Seu número de telefone" required>
                   </div>
                 </div>
                 <div class="form-group mt-3">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Objectivo" required>
+                  <input type="text" class="form-control" name="assunto" id="subject" placeholder="Assunto" required>
                 </div>
                 <div class="form-group mt-3">
-                  <textarea class="form-control" name="message" rows="5" placeholder="Mensagem" required></textarea>
+                  <textarea class="form-control" name="mensagem" rows="5" placeholder="Mensagem" required></textarea>
                 </div>
                 <div class="my-3">
-                  <div class="loading">Processando</div>
-                  <div class="error-message"></div>
                   <div class="sent-message">Obrigado pela sua mensagem</div>
                 </div>
-                <div class="text-center"><button type="submit" title="Send Message">enviar mensagem</button></div>
+                <div class="text-center"><button type="submit" title="Send Message">Enviar mensagem</button></div>
               </form>
             </div>
           </div>
