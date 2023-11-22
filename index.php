@@ -571,7 +571,7 @@ $query2 = "select * from contadores";
             </div>
 
             <div class="form">
-              <form method="post" class="php-email-form">
+              <form method="post">
                 <div class="row">
                   <div class="form-group col-lg-6">
                     <input type="text" name="nomeM" class="form-control" id="name" placeholder="Seu Nome" required>
