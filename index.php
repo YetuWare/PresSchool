@@ -571,7 +571,7 @@ $query2 = "select * from contadores";
             </div>
 
             <div class="form">
-              <form method="post" role="form" class="php-email-form">
+              <form method="post" class="php-email-form">
                 <div class="row">
                   <div class="form-group col-lg-6">
                     <input type="text" name="nomeM" class="form-control" id="name" placeholder="Seu Nome" required>
@@ -592,7 +592,7 @@ $query2 = "select * from contadores";
                 <div class="my-3">
                   <div class="sent-message">Obrigado pela sua mensagem</div>
                 </div>
-                <div class="text-center"><button name="sendMessage" title="Enviar Mensagem">Enviar mensagem</button></div>
+                <div class="text-center"><button name="sendMessage" class="btn btn-primary" title="Enviar Mensagem">Enviar mensagem</button></div>
               </form>
             </div>
           </div>
