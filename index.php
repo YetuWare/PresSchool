@@ -592,7 +592,7 @@ $query2 = "select * from contadores";
                 <div class="my-3">
                   <div class="sent-message">Obrigado pela sua mensagem</div>
                 </div>
-                <div class="text-center"><button type="submit" name="sendMessage" title="Enviar Mensagem">Enviar mensagem</button></div>
+                <div class="text-center"><button name="sendMessage" title="Enviar Mensagem">Enviar mensagem</button></div>
               </form>
             </div>
           </div>
