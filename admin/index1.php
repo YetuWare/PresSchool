@@ -231,6 +231,81 @@
                         
                                 <?php
                                  
+                                    $queryM = "select * from mensagem";
+                                    $dados = mysqli_query($conexao,$queryN);
+                                    
+                                    if($dados){
+                                        $total = mysqli_num_rows($dados);
+                                        if($total > 0){
+                                            
+                                            
+                                            echo "
+                                    
+                                            <table class='table table-bordered table-hover table-sm table-responsive'>
+                                            <thead class='thead-light'>    
+                                            <tr>
+                                                    <th>ID</th>
+                                                    <th>Nome</th>
+                                                    <th>Email</th>
+                                                    <th>Telefone</th>
+                                                    <th>Assunto</th>
+                                                    <th>Mensagem</th>
+                                                    <th>Acções</th>
+                                                </tr></thead>";        
+                                while($linha = mysqli_fetch_assoc($dados)){
+                                    $identify2 = $linha['id'];
+                                    echo "
+                                    <tbody>
+                                    <tr>
+                                    
+                                    <td>".$linha['id']."</td>".
+                                    "<td>".$linha['nome']."</td>".
+                                    "<td>".$linha['email']."
+                                    </td>".
+                                    "<td>".$linha['telefone']."
+                                    </td>".
+
+                                    "<td>".$linha['assunto']."
+                                    </td>".
+
+                                    "<td>".$linha['mensagem']."
+                                    </td>"."
+                                    
+                                    <td><form method='POST' action='../remadmin.php?id=".$identify2."'>
+                                    
+                                <button name='btneliminar' style='background-color: transparent;border:none;'>
+                                apagar
+                                </form>
+                                </td>
+                                </tr>
+                                    <!--<tr id='edit' style=''>
+                                    <form method='POST'>
+                                        <td> <input type='hidden' name='id_admin' value=".$linha['id_admin']."></input> </td>    
+                                        <td> <label>Nome</label><br><input name='nome_admin' value=".$linha['nome_admin']."></input> </td>
+                                        <td> <label>Email / Telefone</label><br><input type='text' name='email_telefone' value=".$linha['email_telefone']."></input> </td>
+                                        <td> <label>Morada</label><br><input name='morada' value=".$linha['morada']."></input> </td> 
+                                        <td> <label>Senha</label><br><input type='password' name='senha'></td>   
+                                        <td> <br><button type='submit' name='editar3'> Actualizar </button> </td>
+                                    -->     
+                                    </form>    
+                                    
+                                    ";
+                                }
+                                      echo "</tr></table>";  
+                                    }
+                                }
+
+                                
+
+                    ?>
+                                
+                                
+                    </div>
+                    <div>
+                        <h3>Administradores</h3>
+                        
+                                <?php
+                                 
                                     $query = "select * from admin";
                                     $dados = mysqli_query($conexao,$query);
                                     
