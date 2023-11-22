@@ -589,9 +589,6 @@ $query2 = "select * from contadores";
                 <div class="form-group mt-3">
                   <textarea class="form-control" name="mensagem" rows="5" placeholder="Mensagem" required></textarea>
                 </div>
-                <div class="my-3">
-                  <div class="sent-message">Obrigado pela sua mensagem</div>
-                </div>
                 <div class="text-center"><button type="submit" name="sendMessage" class="btn btn-primary" title="Enviar Mensagem">Enviar mensagem</button></div>
               </form>
             </div>
