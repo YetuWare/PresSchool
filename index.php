@@ -577,10 +577,10 @@ $query2 = "select * from contadores";
                     <input type="text" name="nomeM" class="form-control" id="name" placeholder="Seu Nome" required>
                   </div>
                   <div class="form-group col-lg-6 mt-3 mt-lg-0">
-                    <input type="tel" class="form-control" name="emailM" id="email" placeholder="Seu email" required>
+                    <input type="email" class="form-control" name="emailM" id="email" placeholder="Seu email" required>
                   </div>
                   <div class="form-group col-lg-6 mt-3 mt-lg-0">
-                    <input type="email" class="form-control" name="telefoneM" id="telefone" placeholder="Seu número de telefone" required>
+                    <input type="tel" class="form-control" name="telefoneM" id="telefone" placeholder="Seu número de telefone" required>
                   </div>
                 </div>
                 <div class="form-group mt-3">
