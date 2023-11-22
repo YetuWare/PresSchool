@@ -227,16 +227,16 @@
                         
                     </div>
                     <div>
-                        <h3>Administradores</h3>
+                        <h3>Mensagem</h3>
                         
                                 <?php
                                  
                                     $queryM = "select * from mensagem";
-                                    $dados = mysqli_query($conexao,$queryN);
+                                    $dadosM = mysqli_query($conexao,$queryM);
                                     
-                                    if($dados){
-                                        $total = mysqli_num_rows($dados);
-                                        if($total > 0){
+                                    if($dadosM){
+                                        $totalM = mysqli_num_rows($dadosM);
+                                        if($totalM > 0){
                                             
                                             
                                             echo "
@@ -252,26 +252,26 @@
                                                     <th>Mensagem</th>
                                                     <th>Acções</th>
                                                 </tr></thead>";        
-                                while($linha = mysqli_fetch_assoc($dados)){
-                                    $identify2 = $linha['id'];
+                                while($linhaM = mysqli_fetch_assoc($dadosM)){
+                                    $identify2M = $linhaM['id'];
                                     echo "
                                     <tbody>
                                     <tr>
                                     
-                                    <td>".$linha['id']."</td>".
-                                    "<td>".$linha['nome']."</td>".
-                                    "<td>".$linha['email']."
+                                    <td>".$linhaM['id']."</td>".
+                                    "<td>".$linhaM['nome']."</td>".
+                                    "<td>".$linhaM['email']."
                                     </td>".
-                                    "<td>".$linha['telefone']."
-                                    </td>".
-
-                                    "<td>".$linha['assunto']."
+                                    "<td>".$linhaM['telefone']."
                                     </td>".
 
-                                    "<td>".$linha['mensagem']."
+                                    "<td>".$linhaM['assunto']."
+                                    </td>".
+
+                                    "<td>".$linhaM['mensagem']."
                                     </td>"."
                                     
-                                    <td><form method='POST' action='../remadmin.php?id=".$identify2."'>
+                                    <td><form method='POST' action='../remadmin.php?id=".$identify2M."'>
                                     
                                 <button name='btneliminar' style='background-color: transparent;border:none;'>
                                 apagar
