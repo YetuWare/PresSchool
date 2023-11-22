@@ -1,6 +1,19 @@
 <?php
 
 include 'conexao.php';
+
+if(isset($_POST['nomeM'])){
+  $nomeM = $_POST['nomeM'];
+  $emailM = $_POST['emailM'];
+  $telefoneM = $_POST['telefoneM'];
+  $assunto = $_POST['assunto'];
+  $mensagem = $_POST['mensagem'];
+
+  $queryM = "INSERT INTO mensagem (nome,email,telefone,assunto,mensagem) VALUES ('$nomeM','$emailM','$telefoneM','$assunto','$mensagem')";
+
+  mysqli_query($conexao, $queryM);
+}
+
 $query1 = "select * from imagem";
 $dados2 = mysqli_query($conexao,$query1);
 if($dados2){
@@ -564,7 +577,7 @@ $query2 = "select * from contadores";
                     <input type="text" name="nomeM" class="form-control" id="name" placeholder="Seu Nome" required>
                   </div>
                   <div class="form-group col-lg-6 mt-3 mt-lg-0">
-                    <input type="email" class="form-control" name="emailM" id="email" placeholder="Seu email" required>
+                    <input type="tel" class="form-control" name="emailM" id="email" placeholder="Seu email" required>
                   </div>
                   <div class="form-group col-lg-6 mt-3 mt-lg-0">
                     <input type="email" class="form-control" name="telefoneM" id="telefone" placeholder="Seu número de telefone" required>
@@ -579,7 +592,7 @@ $query2 = "select * from contadores";
                 <div class="my-3">
                   <div class="sent-message">Obrigado pela sua mensagem</div>
                 </div>
-                <div class="text-center"><button type="submit" title="Send Message">Enviar mensagem</button></div>
+                <div class="text-center"><button type="submit" name="sendMessage" title="Enviar Mensagem">Enviar mensagem</button></div>
               </form>
             </div>
           </div>
