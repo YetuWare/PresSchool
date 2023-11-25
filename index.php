@@ -10,6 +10,7 @@
   <meta content="Aprender inglês é na PRES SCHOOL" name="description">
   <meta name="author" content="YetuWare">
   <meta content="english,presschool,school" name="keywords">
+  <link rel="stylesheet" href="assets/css/Modal.css">
 
   <!-- Favicons -->
 
@@ -316,49 +317,14 @@
         <input type="text" class="form-control" name="assunto" id="subject" placeholder="Assunto" required>
       </div>
       <div class="form-group mt-3">
-        <textarea class="form-control" name="mensagem" rows="5" placeholder="Mensagem" required></textarea>
+        <textarea class="form-control" name="mensagem" rows="5" placeholder="Mensagem " required></textarea> <br><br>
       </div>
       <div class="text-center"><button type="submit" name="sendMessage" class="btn btn-primary" title="Enviar Mensagem">Enviar mensagem</button></div>
     </form>
   </div>
 </div>
 
-<!-- Adicione esta parte ao seu CSS para estilizar a modal -->
-<style>
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
-}
 
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-</style>
 
 
               <div class="swiper-pagination"></div>
