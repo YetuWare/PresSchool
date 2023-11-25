@@ -1,89 +1,3 @@
-<?php
-
-include 'conexao.php';
-
-if(isset($_POST['nomeM'])){
-  $nomeM = $_POST['nomeM'];
-  $emailM = $_POST['emailM'];
-  $telefoneM = $_POST['telefoneM'];
-  $assunto = $_POST['assunto'];
-  $mensagem = $_POST['mensagem'];
-
-  $queryM = "INSERT INTO mensagem (nome,email,telefone,assunto,mensagem) VALUES ('$nomeM','$emailM','$telefoneM','$assunto','$mensagem')";
-
-  mysqli_query($conexao, $queryM);
-}
-
-$query1 = "select * from imagem";
-$dados2 = mysqli_query($conexao,$query1);
-if($dados2){
-         $total2 = mysqli_num_rows($dados2);
-         if($total2 > 0){          
-             while($linha2 = mysqli_fetch_assoc($dados2)){
-             //$id1 =  $linha2['id'];
-             $titulo = $linha2["titulo"];
-             $img = $linha2["imagem"];
-             $resultado = "";
-             $resultado .="
-             <div class='col-lg-4 col-md-6 portfolio-item filter-app'>
-            <div class='portfolio-wrap'>
-              <img src='admin/uploads/".$img."' class='img-fluid' alt=''>
-              <div class='portfolio-info'>
-                <h4><a>".$titulo."</a></h4>
-                <div>
-                  <a href='admin/uploads/".$img."' data-gallery='portfolioGallery' title='".$titulo."' class='portfolio-lightbox link-preview'><i class='bi bi-plus'></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-             ";
-             }
-         }
-}
-
-$query2 = "select * from contadores";
-    $dados3 = mysqli_query($conexao,$query2);
-    if($dados3){
-            $total3 = mysqli_num_rows($dados3);
-            if($total3 > 0){          
-                while($linha3 = mysqli_fetch_assoc($dados3)){
-                //$id1 =  $linha2['id'];
-
-                $talunos1 = $linha3["talunos"];
-                $nalunos1 = $linha3["nalunos"];
-                $ialunos1 = $linha3["ialunos"];
-                $tformadores1 = $linha3["tformadores"];
-                $resultado1 = "";
-                $resultado1 .="
-                <div class='row counters' data-aos='fade-up' data-aos-delay='100'>
-
-          <div class='col-lg-3 col-6 text-center'>
-            <span data-purecounter-start='0' data-purecounter-end='".$talunos1."' data-purecounter-duration='1' class='purecounter'></span>
-            <p>Total de Alunos</p>
-          </div>
-
-          <div class='col-lg-3 col-6 text-center'>
-            <span data-purecounter-start='0' data-purecounter-end='".$nalunos1."' data-purecounter-duration='1' class='purecounter'></span>
-            <p>Alunos Nacionais</p>
-          </div>
-
-          <div class='col-lg-3 col-6 text-center'>
-            <span data-purecounter-start='0' data-purecounter-end='".$ialunos1."' data-purecounter-duration='1' class='purecounter'></span>
-            <p>Alunos Internacionais</p>
-          </div>
-
-          <div class='col-lg-3 col-6 text-center'>
-            <span data-purecounter-start='0' data-purecounter-end='".$tformadores1."' data-purecounter-duration='1' class='purecounter'></span>
-            <p>Total de Formadores</p>
-          </div>
-
-        </div>
-                ";
-                }
-              }
-            }
-
-?>
 
 <!DOCTYPE html>
 <html lang="pt-PT">
@@ -373,11 +287,80 @@ $query2 = "select * from contadores";
                     </p>
                   </div>
                 </div>
-                
                 <!-- End testimonial item -->
                
                 
               </div>
+              <center>
+              <button class=" btn btn-primary" id="openModal">Deixe o seu Testemunho</button>
+
+              </center>
+
+              <!---Modal-->
+              <!-- Adicione este código dentro do corpo da sua página, após o código existente -->
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form method="post">
+      <div class="row">
+        <div class="form-group col-lg-6">
+          <input type="text" name="nomeM" class="form-control" id="name" placeholder="Seu Nome" required>
+        </div>
+        <div class="form-group col-lg-6 mt-3 mt-lg-0">
+          <input type="email" class="form-control" name="emailM" id="email" placeholder="Seu email" required>
+        </div>
+      
+      </div>
+      <div class="form-group mt-3">
+        <input type="text" class="form-control" name="assunto" id="subject" placeholder="Assunto" required>
+      </div>
+      <div class="form-group mt-3">
+        <textarea class="form-control" name="mensagem" rows="5" placeholder="Mensagem" required></textarea>
+      </div>
+      <div class="text-center"><button type="submit" name="sendMessage" class="btn btn-primary" title="Enviar Mensagem">Enviar mensagem</button></div>
+    </form>
+  </div>
+</div>
+
+<!-- Adicione esta parte ao seu CSS para estilizar a modal -->
+<style>
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+
+
               <div class="swiper-pagination"></div>
             </div>
 
@@ -667,6 +650,8 @@ $query2 = "select * from contadores";
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/write.js"></script>
+   <!---script de teste-->
+  <script src="assets/js/modal.js"></script>
 
 </body>
 
